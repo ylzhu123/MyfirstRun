@@ -11,4 +11,11 @@ jobs:
         with:
           retain_days: 0
           keep_minimum_runs: 0
+
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment to deploy to'
+        type: environment
+        required: true
           
